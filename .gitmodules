@@ -40,3 +40,6 @@
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = git://github.com/Shougo/neocomplcache.git
+[submodule "bundle/vim-coffee-script"]
+	path = bundle/vim-coffee-script
+	url = http://github.com/kchmck/vim-coffee-script.git
