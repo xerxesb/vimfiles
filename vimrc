@@ -28,7 +28,8 @@ colorscheme krunktastic " github256
 " TEXT SETTINGS
 
 " Disable line wrapping
-set nowrap
+" set nowrap
+set wrap
 
 " use indents of 2 spaces, and have them copied down lines:
 set expandtab
