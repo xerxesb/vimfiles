@@ -41,6 +41,8 @@ set shiftwidth=2
 set number 
 set numberwidth=3
 
+" kill trailing spaces when exiting file
+autocmd BufWritePre * :%s/\s\+$//e
 
 " KEY BINDINGS
 
