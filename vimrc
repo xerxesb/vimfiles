@@ -23,13 +23,13 @@ set autoread
 " Explicitly set 256 color support
 " set t_Co=256
 
-colorscheme krunktastic " github256 
+colorscheme krunktastic " github256
 
 " TEXT SETTINGS
 
 " Disable line wrapping
-" set nowrap
-set wrap
+set nowrap
+" set wrap
 
 " use indents of 2 spaces, and have them copied down lines:
 set expandtab
@@ -38,7 +38,7 @@ set softtabstop=2
 set shiftwidth=2
 
 " line numbers
-set number 
+set number
 set numberwidth=3
 
 " kill trailing spaces when exiting file
@@ -168,7 +168,7 @@ let NERDDefaultNesting = 0
 let NERDRemoveExtraSpaces = 1
 let NERDSpaceDelims = 1
 
-" NERDTree 
+" NERDTree
 
 " Enable nice colors
 let NERDChristmasTree = 1
