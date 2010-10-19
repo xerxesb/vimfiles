@@ -1,10 +1,10 @@
 " Set the guifont
-  set guifont=Monaco:h12
+  set guifont=Inconsolata:h12
 
   set antialias
 
 " fullscreen maximizes vertically AND horizontally
-  set fuoptions=maxvert,maxhorz
+"set fuoptions=maxvert,maxhorz
 
 " Don't focus the window when the mouse pointer is moved.
   set nomousefocus
@@ -61,27 +61,27 @@
   imap <D-[> <C-O><<
 
 " Unmap Apple+T so we can...
-macmenu &File.New\ Tab key=<nop>
+"macmenu &File.New\ Tab key=<nop>
 
 " Change Apple+T to TextMate Like Fuzzy Finder
 " nnoremap <D-t> :PeepOpen<CR>
 nnoremap <D-t> :FufFile<CR>
 
 " Unmap Apple+Shift+T so we can...
-macmenu &File.Open\ Tab\.\.\. key=<nop>
+"macmenu &File.Open\ Tab\.\.\. key=<nop>
 
 " Change Apple+Shift+T to TextMate Like Fuzzy Finder
 nnoremap <D-T> :FufTag!<CR>
 
 " Unmap Apple+b so we can...
-macmenu &Tools.Make key=<nop>
+"macmenu &Tools.Make key=<nop>
 
 " Change Apple+b to Emacseque buffer browser
 map <D-b> :FufBuffer!<CR>
 imap <D-b> :FufBuffer!<CR>
 
 " Unmap Apple+S to remap to Esc, then :w<CR>
-macmenu &File.Save key=<nop>
+"macmenu &File.Save key=<nop>
 imap <D-s> <Esc>:w<CR>
 map <D-s> :w<CR>
 

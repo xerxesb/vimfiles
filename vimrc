@@ -5,7 +5,7 @@ call pathogen#runtime_append_all_bundles()
 scriptencoding utf-8
 
 " Use zsh.
-set shell=zsh
+"set shell=zsh
 
 " Enable filetype-specific indenting, syntax, and plugins
 filetype plugin indent on
@@ -28,18 +28,21 @@ colorscheme krunktastic " github256
 " TEXT SETTINGS
 
 " Disable line wrapping
-set nowrap
-" set wrap
+" set nowrap
+set wrap
 
-" use indents of 2 spaces, and have them copied down lines:
+" use indents of 4 spaces, and have them copied down lines:
 set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 
 " line numbers
 set number
 set numberwidth=3
+
+" visible whitespace characters
+set list listchars=tab:»·,trail:·,eol:¶
 
 " kill trailing spaces when exiting file
 autocmd BufWritePre * :%s/\s\+$//e
@@ -58,7 +61,7 @@ set splitright
 
 
 " Set temporary directory (don't litter local dir with swp/tmp files)
-set directory=/tmp/
+set directory=$TEMP
 
 " Use the tab complete menu
 set wildmenu
@@ -69,7 +72,7 @@ set wildmenu
 " imap ii <Esc>
 
 " Yank from the cursor to the end of the line, to be consistent with C and D.
-nnoremap Y y$
+"nnoremap Y y$
 
 
 " CUSTOM PLUGINS
