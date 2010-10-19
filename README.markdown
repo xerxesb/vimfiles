@@ -5,3 +5,7 @@ VIM was reborn like unto the noble phoenix.  And so it was as it always should b
 # Warning: Submodules
 
 I always get caught not initializing and updating git submodules when I clone a repo. Don't be like me.
+
+    $ git submodule init
+    $ git submodule update
+
