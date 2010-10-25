@@ -18,6 +18,9 @@ set vb t_vb=
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" I can't spel
+set spell
+
 " COLOR SUPPORT
 
 " Explicitly set 256 color support
@@ -29,6 +32,7 @@ colorscheme krunktastic " github256
 
 " Disable line wrapping
 " set nowrap
+set formatoptions=1
 set wrap
 
 " use indents of 4 spaces, and have them copied down lines:
@@ -47,10 +51,6 @@ set list listchars=tab:»·,trail:·,eol:¶
 " kill trailing spaces when exiting file
 autocmd BufWritePre * :%s/\s\+$//e
 
-" KEY BINDINGS
-
-let mapleader = ","
-
 " WINDOW SPLITTING
 
 " Open new horizontal split windows below current
@@ -66,14 +66,25 @@ set directory=$TEMP
 " Use the tab complete menu
 set wildmenu
 
-" KEYBINDINGS
+" KEY BINDINGS
 
-" Quick, jump out of insert mode while no one is looking
-" imap ii <Esc>
+let mapleader = ","
 
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 "nnoremap Y y$
 
+" Mapping for quick directory change (http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file)
+map ,cd :cd %:p:h<CR>
+
+" Tab-style buffer switching
+map <C-S-tab> :bprev<CR>
+map <C-tab> :bnext<CR>
+
+" move line by line in paragraph
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 
 " CUSTOM PLUGINS
 
